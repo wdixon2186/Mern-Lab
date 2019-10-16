@@ -2,15 +2,16 @@ import React, { Component } from "react";
 
 import listOfMovies from "./data/movie-data.json";
 import { Route, Link, Switch } from "react-router-dom";
+import './MovieList.css';
 
 class MovieList extends Component {
 	render() {
 		let list = listOfMovies.map(item => {
 			return (
-				<div key={item.name}>
+				<div key={item.title}>
 					<p>
-						<Link to={"/" + item.name}>
-							<img src={item.image}></img>
+						<Link to={"/" + item.title}>
+							<img class='img' src={item.image}></img>
 						</Link>
 					</p>
 				</div>
