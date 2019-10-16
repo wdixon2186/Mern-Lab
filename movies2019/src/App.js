@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Link, Switch, Redirect } from "react-router-dom";
 import './App.css';
+import MovieList from './MovieList';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         </Link>
       </nav>
       <main>
-        
+        <Route path='/' component={MovieList} />
       </main>
     </div>
   );
