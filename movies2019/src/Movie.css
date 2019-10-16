@@ -1,7 +1,6 @@
 .imgMovie{
     width: 350px;
     height: 400px;
-    display: inline-block;
     float: left;
     padding-right: 40px;
 }
@@ -11,12 +10,10 @@ p {
 }
 
 .movie {
-    
     text-decoration: none;
     color: black;
     background-color: lightgray;
     padding: 5px;
     margin-left: 15%;
-
 }
 
